@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>WatchTracking</name>
+    <name>Deltoya</name>
     <description>
-        Aplicación para el rastreo del reloj
+        Aplicación para saber quien hay en el pub Deltoya
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        Atlantis Team
+    <author email="me@raul-alvarez.es" href="http://raul-alvarez.es">
+        Raul Alvarez
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
