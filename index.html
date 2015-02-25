@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deltoya</title>
+	<meta charset="utf-8"/>
+	<link rel="import" href="components/polymer/polymer.html">
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../webcomponentsjs/webcomponents.js"></script>
+
+    <link rel="import" href="../core-icons/core-icons.html">
+    <link rel="import" href="paper-icon-button.html">
+	<link rel="stylesheet" type="text/css" href="css/button.css"/>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    $( document ).ready(function() {
+    	var nombre = window.localStorage.getItem("nombre");
+    	var telefono = window.localStorage.getItem("telefono");
+	});
+
+    </script>
+  </head>
+  <body>
+	 <center>
+		<div class="estoy">Estoy en el Deltoya</div><br>
+		<div class="quien">¿Quién hay en el Deltoya?</div>
+		<form name="form2" action="configuracion.html" method="post">
+			<input id="configurationButton" type="submit" class="myButton" value="Configuración"/>
+		</form>
+	 </center>
+  </body>
+</html>
