@@ -204,3 +204,10 @@ table tr {
 input {
 	color: black;
 }
+
+#deltoyaimg {
+	width: 35%;
+	height: 180px;
+	background-image: url("img/deltoya.png");
+	margin-bottom: 20px;
+}
