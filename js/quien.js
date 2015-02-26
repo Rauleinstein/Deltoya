@@ -23,7 +23,7 @@
 		var listahtml = "";
 
 		for (var i = datos.length - 1; i >= 0; i--) {
-			listahtml += "<a>"+datos[i].nombre+"</a><br>";
+			listahtml += "<a>"+datos[i].nombre+" "+datos[i].numero+"</a><br>";
 		};
 		$("#lista").html(listahtml);
 	}
