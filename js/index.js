@@ -4,6 +4,7 @@
     }
 
     function sendData() {
+    	window.localStorage.setItem("estoy", 1);
     	$.ajax({
     		url: 'http://tractoresalberto.esy.es/insert.php',
     		type: 'POST',
@@ -23,13 +24,27 @@
     	
     }
 
-    function getData() {
+    function changeButton () {
+    	if ($(".estoy").hasClass('hidden')) {
+	    	$(".estoy").removeClass('hidden');
+	    	$(".green").addClass('hidden');
+    	} else{
+	    	$(".green").removeClass('hidden');
+	    	$(".estoy").addClass('hidden');
+    	};
+    }
+
+    function unlist() {
+
+    	window.localStorage.setItem("estoy", 0);
     	$.ajax({
-    		url: 'http://tractoresalberto.esy.es/lista.php',
+    		url: 'http://tractoresalberto.esy.es/unlist.php',
     		type: 'POST',
+    		data: {name: nombre},
     	})
     	.done(function() {
     		console.log("success");
+    		changeButton();
     	})
     	.fail(function() {
     		console.log("error");
@@ -43,7 +58,11 @@
 
     $( document ).ready(function() {
     	nombre = window.localStorage.getItem("nombre");
-    	telefono = window.localStorage.getItem("telefono");
+    	telefono = window.localStorage.getItem("telefono"); 	
     	$("#nombre").val(nombre);
     	$("#telefono").val(telefono);
+    	if (window.localStorage.getItem("estoy") == "1") {
+    		changeButton();
+    		$("#configurationButton").addClass("hidden");
+    	};
 	});

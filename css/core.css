@@ -14,7 +14,7 @@
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	border:1px solid #337fed;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:arial;
@@ -107,6 +107,7 @@ table tr {
 
 
 .estoy {
+	width: 330px;
 	-moz-box-shadow:inset 0px 39px 0px -24px #f5978e;
 	-webkit-box-shadow:inset 0px 39px 0px -24px #f5978e;
 	box-shadow:inset 0px 39px 0px -24px #f5978e;
@@ -115,7 +116,7 @@ table tr {
 	-webkit-border-radius:4px;
 	border-radius:4px;
 	border:1px solid #d02718;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:arial;
@@ -123,6 +124,7 @@ table tr {
 	padding:17px 15px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #810e05;
+	margin-bottom: 30px;
 }
 .estoy:hover {
 	background-color:#c62d1f;
@@ -157,4 +159,48 @@ table tr {
 .quien:active {
 	position:relative;
 	top:1px;
+}
+
+#lista {
+	color: white;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.green {
+	width: 258px;
+	-moz-box-shadow:inset 0px 39px 0px -24px #9acc85;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #9acc85;
+	box-shadow:inset 0px 39px 0px -24px #9acc85;
+	background-color:#74ad5a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #3b6e22;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:27px;
+	padding:18px 52px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92b879;
+	margin-bottom: 30px;
+}
+.green:hover {
+	background-color:#68a54b;
+}
+.green:active {
+	position:relative;
+	top:1px;
+}
+
+* {
+	color: white;
+}
+
+input {
+	color: black;
 }
