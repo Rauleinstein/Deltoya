@@ -206,7 +206,7 @@ input {
 }
 
 #deltoyaimg {
-	width: 35%;
+	width: 480px;
 	height: 180px;
 	background-image: url("img/deltoya.png");
 	margin-bottom: 20px;

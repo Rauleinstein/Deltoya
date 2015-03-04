@@ -24,27 +24,36 @@
     	
     }
 
+
     function changeButton () {
-    	if ($(".estoy").hasClass('hidden')) {
-	    	$(".estoy").removeClass('hidden');
-	    	$(".green").addClass('hidden');
-    	} else{
-	    	$(".green").removeClass('hidden');
-	    	$(".estoy").addClass('hidden');
-    	};
+        if ($(".estoy").hasClass('hidden')) {
+            $(".estoy").removeClass('hidden');
+            $(".green").addClass('hidden');
+        } else{
+            $(".green").removeClass('hidden');
+            $(".estoy").addClass('hidden');
+        };
+    }
+
+    function clickEstoy () {
+        sendData(); 
+        changeButton();
+        $("#configurationButton").addClass("hidden");
+
     }
 
     function unlist() {
 
-    	window.localStorage.setItem("estoy", 0);
-    	$.ajax({
-    		url: 'http://tractoresalberto.esy.es/unlist.php',
-    		type: 'POST',
-    		data: {name: nombre},
+        window.localStorage.setItem("estoy", 0);
+        $.ajax({
+            url: 'http://tractoresalberto.esy.es/unlist.php',
+            type: 'POST',
+            data: {name: nombre},
     	})
     	.done(function() {
     		console.log("success");
     		changeButton();
+            $("#configurationButton").removeClass("hidden");
     	})
     	.fail(function() {
     		console.log("error");
@@ -54,6 +63,10 @@
     		console.log(msg);
     	});
     	
+    }
+
+    function clickNoEstoy () {
+        unlist();
     }
 
     $( document ).ready(function() {
