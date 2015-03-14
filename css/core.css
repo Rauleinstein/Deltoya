@@ -205,9 +205,14 @@ input {
 	color: black;
 }
 
+
+
 #deltoyaimg {
-	width: 480px;
-	height: 180px;
-	background-image: url("img/deltoya.png");
-	margin-bottom: 20px;
+    background-image: url("img/deltoya.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 180px;
+    margin-bottom: 20px;
+    width: 100%;
 }
