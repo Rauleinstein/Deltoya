@@ -216,3 +216,7 @@ input {
     margin-bottom: 20px;
     width: 100%;
 }
+
+input {
+    -webkit-user-select: auto !important;
+}
